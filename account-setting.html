@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lookup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <title>Lookup</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/" class="header__logo" aria-label="link to homepage">
+                    <svg>
+                        <use xlink:href='img/icons/icons-sprite.svg#main-logo'></use>
+                    </svg>
+                </a>
+                <nav class='header-menu'>
+                    <ul class='header-menu__list'>
+                        <li class='header-menu__item'>
+                            <a href='pricing.html' class='header-menu__link'><span>Pricing plan</span></a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='' class='header-menu__link '><span>Contact us</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions actions-header">
+                    <div class="actions-header__mobile-menu mobile-menu-actions">
+                        <ul class="mobile-menu-actions__list">
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Account
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Settings
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Invoice
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="actions-header__credits credits">
+                        <div class="credits__icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#credits-icon'></use>
+                            </svg>
+                        </div>
+                        <div class="credits__info">
+                            <div class="credits__name">Credit :</div>
+                            <div class="credits__value">10</div>
+                        </div>
+                    </div>
+                    <div class="actions-header__select select" data-select-menu>
+                        <button class="select__header" type="button" aria-label="settings" data-select-menu-button>
+                            <span class="select__value" data-select-menu-value>Account</span>
+                            <span class="select__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#arrow-spoiler'></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="select__body" data-select-menu-drop-down>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Settings</span></a></li>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Invoice</span></a></li>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="actions-header__theme-switcher" data-theme="light-mode">
+                        <span class="actions-header__dark-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-dark'></use>
+                            </svg>
+                        </span>
+                        <span class="actions-header__light-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-light'></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class='burger-menu'>
+                        <span class="burger-menu__body">
+                            <span class='burger-menu__line burger-menu__line_1'></span>
+                            <span class='burger-menu__line burger-menu__line_2'></span>
+                            <span class='burger-menu__line burger-menu__line_3'></span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </header>
+        <main class="page">
+            <section class="account-setting-hero decor">
+                <div class="decor__wrapper">
+                    <img class="decor__desctop" src="img/main/decor-spiral.svg" alt="decor-spiral">
+                    <img class="decor__mobile" src="img/main/decor-spiral-mobile.svg" alt="decor-spiral">
+                </div>
+                <div class="account-setting-hero__container">
+                    <h1 class="account-setting-hero__title title title-hero">
+                        Account Settings
+                    </h1>
+                    <div class="account-setting-hero__body">
+                        <h2 class="account-setting-hero__caption">
+                            Change Password
+                        </h2>
+                        <form action="#" class="account-setting-hero__form">
+                            <div class="account-setting-hero__items">
+                                <div class="account-setting-hero__item">
+                                    <label for="current-password" class="account-setting-hero__label">Change
+                                        Password</label>
+                                    <div class="account-setting-hero__password">
+                                        <input type="text" id="current-password" name="current-password"
+                                            placeholder="Enter your current password"
+                                            class="account-setting-hero__input input">
+                                        <button data-pass-button type="button" aria-label="show and hide password"
+                                            class="account-setting-hero__pass-button">
+                                            <span class="account-setting-hero__icon-visible">
+                                                <svg>
+                                                    <use xlink:href='img/icons/icons-sprite.svg#password-icon-visible'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="account-setting-hero__icon-invisible">
+                                                <svg>
+                                                    <use
+                                                        xlink:href='img/icons/icons-sprite.svg#password-icon-invisible'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="account-setting-hero__item">
+                                    <label for="new-password" class="account-setting-hero__label">New Password</label>
+                                    <div class="account-setting-hero__password" data-pass>
+                                        <input data-pass-input type="password" id="new-password" autocomplete="on" name="new-password"
+                                            placeholder="Enter your new password"
+                                            class="account-setting-hero__input input">
+                                        <button data-pass-button type="button" aria-label="show and hide password"
+                                            class="account-setting-hero__pass-button">
+                                            <span class="account-setting-hero__icon-visible">
+                                                <svg>
+                                                    <use xlink:href='img/icons/icons-sprite.svg#password-icon-visible'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="account-setting-hero__icon-invisible">
+                                                <svg>
+                                                    <use
+                                                        xlink:href='img/icons/icons-sprite.svg#password-icon-invisible'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="account-setting-hero__disclaimer">
+                                        At least 8 characters, including letters, numbers, and symbols.
+                                    </div>
+                                </div>
+                                <div class="account-setting-hero__item">
+                                    <label for="confirm-new-password" class="account-setting-hero__label">Confirm New
+                                        Password</label>
+                                    <div class="account-setting-hero__password" data-pass>
+                                        <input data-pass-input type="password" autocomplete="on" id="confirm-new-password"
+                                            name="confirm-new-password" placeholder="Re-enter your new password"
+                                            class="account-setting-hero__input input">
+                                        <button data-pass-button type="button" aria-label="show and hide password"
+                                            class="account-setting-hero__pass-button">
+                                            <span class="account-setting-hero__icon-visible">
+                                                <svg>
+                                                    <use xlink:href='img/icons/icons-sprite.svg#password-icon-visible'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="account-setting-hero__icon-invisible">
+                                                <svg>
+                                                    <use
+                                                        xlink:href='img/icons/icons-sprite.svg#password-icon-invisible'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="account-setting-hero__button button "><span>Change
+                                    Password</span></button>
+                        </form>
+                    </div>
+                    <div class="account-hero-footer">
+                        <h2 class="account-hero-footer__title">
+                            Manage Social Links
+                        </h2>
+                        <a href="#" class="account-hero-footer__link border-gradient ">
+                            <span class="account-hero-footer__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#google-icon'></use>
+                                </svg>
+                            </span>
+                            <span class="account-hero-footer__text">
+                                Unlink Google Account
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__copy">
+                    Platform Registration Lookup • 2025
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

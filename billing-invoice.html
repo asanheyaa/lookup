@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lookup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <title>Lookup</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/" class="header__logo" aria-label="link to homepage">
+                    <svg>
+                        <use xlink:href='img/icons/icons-sprite.svg#main-logo'></use>
+                    </svg>
+                </a>
+                <nav class='header-menu'>
+                    <ul class='header-menu__list'>
+                        <li class='header-menu__item'>
+                            <a href='pricing.html' class='header-menu__link'><span>Pricing plan</span></a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='' class='header-menu__link '><span>Contact us</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions actions-header">
+                    <div class="actions-header__mobile-menu mobile-menu-actions">
+                        <ul class="mobile-menu-actions__list">
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Account
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Settings
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Invoice
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="actions-header__credits credits">
+                        <div class="credits__icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#credits-icon'></use>
+                            </svg>
+                        </div>
+                        <div class="credits__info">
+                            <div class="credits__name">Credit :</div>
+                            <div class="credits__value">10</div>
+                        </div>
+                    </div>
+                    <div class="actions-header__select select" data-select-menu>
+                        <button class="select__header" type="button" aria-label="settings" data-select-menu-button>
+                            <span class="select__value" data-select-menu-value>Account</span>
+                            <span class="select__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#arrow-spoiler'></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="select__body" data-select-menu-drop-down>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Settings</span></a></li>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Invoice</span></a></li>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="actions-header__theme-switcher" data-theme="light-mode">
+                        <span class="actions-header__dark-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-dark'></use>
+                            </svg>
+                        </span>
+                        <span class="actions-header__light-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-light'></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class='burger-menu'>
+                        <span class="burger-menu__body">
+                            <span class='burger-menu__line burger-menu__line_1'></span>
+                            <span class='burger-menu__line burger-menu__line_2'></span>
+                            <span class='burger-menu__line burger-menu__line_3'></span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </header>
+        <main class="page">
+            <div class="billing-invoice-hero decor">
+                <div class="decor__wrapper">
+                    <img class="decor__desctop" src="img/main/decor-spiral.svg" alt="decor-spiral">
+                    <img class="decor__mobile" src="img/main/decor-spiral-mobile.svg" alt="decor-spiral">
+                </div>
+                <div class="billing-invoice-hero__container">
+                    <h1 class="billing-invoice-hero__title title title-hero">
+                        Billing & Invoice
+                    </h1>
+                    <div class="billing-invoice-hero__content">
+                        <div class="billing-invoice-hero__item">
+                            <div class="billing-invoice-table">
+                                <div class="billing-invoice-table__header">
+                                    <h2 class="billing-invoice-table__title">
+                                        Invoice history
+                                    </h2>
+                                    <form action="#" class="billing-invoice-table__form">
+                                        <input type="text" placeholder="Search by Invoice number"
+                                            class="billing-invoice-table__input input">
+                                        <div class="billing-invoice-table__decor">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#search-icon-2'></use>
+                                            </svg>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="billing-invoice-table__body">
+                                    <table class="billing-invoice-table__table">
+                                        <thead class="billing-invoice-table__thead">
+                                            <tr class="billing-invoice-table__tr ">
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-invoice">
+                                                    Invoice #</th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-date">
+                                                    Date
+                                                </th>
+                                                <th
+                                                    class="billing-invoice-table__th billing-invoice-table__th-valid-till">
+                                                    Valid Till</th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-amout">
+                                                    Amount
+                                                </th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-status">
+                                                    Status</th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-action">
+                                                    Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="billing-invoice-table__tbody">
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">INV-2024-001</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 199.99</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">INV-2024-002</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 299.99</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">INV-2024-003</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 109.99</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__pending">Pending</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">INV-2024-004</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 130.00</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">INV-2024-005</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 259.00</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">INV-2024-006</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 159.00</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">INV-2024-007</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 362.50</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="billing-table-mobile__body">
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Invoice #
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    INV-2024-001
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 199.99
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Invoice #
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    INV-2024-002
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 299.99
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Invoice #
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    INV-2024-003
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 109.99
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__pending">Pending</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Invoice #
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    INV-2024-004
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 130.00
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Invoice #
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    INV-2024-005
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 259.00
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Invoice #
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    INV-2024-006
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 159.00
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Invoice #
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    INV-2024-007
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 362.50
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Paid</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="billing-invoice-hero__item">
+                            <div class="billing-invoice-table">
+                                <div class="billing-invoice-table__header">
+                                    <h2 class="billing-invoice-table__title">
+                                        Transactions
+                                    </h2>
+                                    <form action="#" class="billing-invoice-table__form">
+                                        <input type="text" placeholder="Search by transaction ID"
+                                            class="billing-invoice-table__input input">
+                                        <div class="billing-invoice-table__decor">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#search-icon-2'></use>
+                                            </svg>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="billing-invoice-table__body">
+                                    <table class="billing-invoice-table__table">
+                                        <thead class="billing-invoice-table__thead">
+                                            <tr class="billing-invoice-table__tr ">
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-invoice">
+                                                    Transaction ID
+                                                </th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-date">
+                                                    Date
+                                                </th>
+                                                <th
+                                                    class="billing-invoice-table__th billing-invoice-table__th-valid-till">
+                                                    Valid Till
+                                                </th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-amout">
+                                                    Amount
+                                                </th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-amout">
+                                                    Payment Method
+                                                </th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-status">
+                                                    Status
+                                                </th>
+                                                <th class="billing-invoice-table__th billing-invoice-table__th-action">
+                                                    Action
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="billing-invoice-table__tbody">
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">TX-2024-001</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 199.99</td>
+                                                <td class="billing-invoice-table__td">PayPal</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Success</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">TX-2024-002</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 299.99</td>
+                                                <td class="billing-invoice-table__td">Credit Card</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Success</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">TX-2024-003</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 109.99</td>
+                                                <td class="billing-invoice-table__td">Credit Card</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__pending">Processing</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">TX-2024-004</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 130.00</td>
+                                                <td class="billing-invoice-table__td">Credit Card</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Success</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">TX-2024-005</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 259.00</td>
+                                                <td class="billing-invoice-table__td">PayPal</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__paid">Success</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">TX-2024-006</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 159.00</td>
+                                                <td class="billing-invoice-table__td">PayPal</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__pending">Processing</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="billing-invoice-table__tr ">
+                                                <td class="billing-invoice-table__td">TX-2024-007</td>
+                                                <td class="billing-invoice-table__td">Mar 1, 2024</td>
+                                                <td class="billing-invoice-table__td">Apr 1, 2024</td>
+                                                <td class="billing-invoice-table__td">$ 362.50</td>
+                                                <td class="billing-invoice-table__td">Credit Card</td>
+                                                <td class="billing-invoice-table__td">
+                                                    <span class="billing-invoice-table__pending">Processing</span>
+                                                </td>
+                                                <td class="billing-invoice-table__td ">
+                                                    <a href="" class="billing-invoice-table__download">
+                                                        <div class="billing-invoice-table__icon">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="billing-invoice-table__text">
+                                                            Download
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="billing-table-mobile__body">
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Transaction ID
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    TX-2024-001
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 199.99
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Payment Method
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    PayPal
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Success</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Transaction ID
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    TX-2024-002
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 299.99
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Payment Method
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Credit Card
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Success</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Transaction ID
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    TX-2024-003
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 109.99
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Payment Method
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Credit Card
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__pending">Processing</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Transaction ID
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    TX-2024-004
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 130.00
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Payment Method
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Credit Card
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Success</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Transaction ID
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    TX-2024-005
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 259.00
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Payment Method
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    PayPal
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__paid">Success</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Transaction ID
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    TX-2024-006
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 159.00
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Payment Method
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    PayPal
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__pending">Processing</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="billing-table-mobile__column">
+                                        <div class="billing-table-mobile__values">
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Transaction ID
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    TX-2024-007
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Date
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Mar 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Valid Till
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Apr 1, 2024
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Amount
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    $ 362.50
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Payment Method
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    Credit Card
+                                                </div>
+                                            </div>
+                                            <div class="billing-table-mobile__row">
+                                                <div class="billing-table-mobile__label">
+                                                    Status
+                                                </div>
+                                                <div class="billing-table-mobile__value">
+                                                    <span class="billing-invoice-table__pending">Processing</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="billing-table-mobile__footer">
+                                            <a href="" class="billing-table-mobile__download button">
+                                                <span class="billing-table-mobile__icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#download-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                                <span class="billing-table-mobile__text">
+                                                    Download
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__copy">
+                    Platform Registration Lookup • 2025
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

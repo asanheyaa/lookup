@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lookup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <title>Lookup</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/" class="header__logo" aria-label="link to homepage">
+                    <svg>
+                        <use xlink:href='img/icons/icons-sprite.svg#main-logo'></use>
+                    </svg>
+                </a>
+                <nav class='header-menu'>
+                    <ul class='header-menu__list'>
+                        <li class='header-menu__item'>
+                            <a href='pricing.html' class='header-menu__link _active'><span>Pricing plan</span></a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='' class='header-menu__link'><span>Contact us</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions actions-header">
+                    <a href="" class="actions-header__button button"><span>Login</span></a>
+                    <button type="button" class="actions-header__theme-switcher" data-theme="light-mode">
+                        <span class="actions-header__dark-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-dark'></use>
+                            </svg>
+                        </span>
+                        <span class="actions-header__light-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-light'></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="hero-pricing decor">
+                <div class="decor__wrapper">
+                    <img class="decor__desctop" src="img/main/decor-spiral.svg" alt="decor-spiral">
+                    <img class="decor__mobile" src="img/main/decor-spiral-mobile.svg" alt="decor-spiral">
+                </div>
+                <div class="hero-pricing__container">
+                    <div class="hero-pricing__info">
+                        <h1 class="hero-pricing__label title title-hero">
+                            Choose the Perfect Plan for Your Needs
+                        </h1>
+                        <div class="hero-pricing__subtitle">
+                            From basic lookups to advanced investigations, we have a plan that fits your requirements.
+                            All plans include our core
+                            features with different usage limits.
+                        </div>
+                    </div>
+                    <div class="hero-pricing__columns columns-hero-pricing">
+                        <article class="columns-hero-pricing__column">
+                            <div class="columns-hero-pricing__back-decor">
+                                <span class="light-hide"></span>
+                                <span class="dark-hide"></span>
+                            </div>
+                            <div class="columns-hero-pricing__header">
+                                <div class="columns-hero-pricing__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#pricing-icon_01'></use>
+                                    </svg>
+                                </div>
+                                <div class="columns-hero-pricing__info">
+                                    <h2 class="columns-hero-pricing__name">
+                                        Starter plan
+                                    </h2>
+                                    <div class="columns-hero-pricing__description">
+                                        For beginners
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns-hero-pricing__pricing">
+                                <span class="columns-hero-pricing__price">
+                                    $19
+                                </span>
+                                <span class="columns-hero-pricing__term">
+                                    / one-time
+                                </span>
+                            </div>
+                            <div class="columns-hero-pricing__details">
+                                Perfect for those just starting their OSINT journey
+                            </div>
+                            <ul class="columns-hero-pricing__list">
+                                <li class="columns-hero-pricing__item">
+
+                                    50 platform lookups
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Basic search capabilities
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Email & phone search
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Standard response time
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    7-day data retention
+                                </li>
+                            </ul>
+                            <a href="" class="columns-hero-pricing__button border-gradient button button-transparent">
+                                <span>Get started</span>
+                            </a>
+                        </article>
+                        <article class="columns-hero-pricing__column most-popular">
+                            <div class="columns-hero-pricing__back-decor">
+                                <span class="light-hide"></span>
+                                <span class="dark-hide"></span>
+                            </div>
+                            <div class="columns-hero-pricing__header">
+                                <div class="columns-hero-pricing__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#pricing-icon_02'></use>
+                                    </svg>
+                                </div>
+                                <div class="columns-hero-pricing__info">
+                                    <h2 class="columns-hero-pricing__name">
+                                        Basic plan
+                                    </h2>
+                                    <div class="columns-hero-pricing__description">
+                                        For hobbyists
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns-hero-pricing__pricing">
+                                <span class="columns-hero-pricing__price">
+                                    $29
+                                </span>
+                                <span class="columns-hero-pricing__term">
+                                    / per month
+                                </span>
+                            </div>
+                            <div class="columns-hero-pricing__details">
+                                Enhanced features for more serious investigators
+                            </div>
+                            <ul class="columns-hero-pricing__list">
+                                <li class="columns-hero-pricing__item">
+                                    200 platform lookups
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Advanced search filters
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Bulk search (up to 100)
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Priority support
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    30-day data retention
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Custom export formats
+                                </li>
+                            </ul>
+                            <a href="" class="columns-hero-pricing__button button ">
+                                <span>Choose Basic</span>
+                            </a>
+                        </article>
+                        <article class="columns-hero-pricing__column">
+                            <div class="columns-hero-pricing__back-decor">
+                                <span class="light-hide"></span>
+                                <span class="dark-hide"></span>
+                            </div>
+                            <div class="columns-hero-pricing__header">
+                                <div class="columns-hero-pricing__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#pricing-icon_03'></use>
+                                    </svg>
+                                </div>
+                                <div class="columns-hero-pricing__info">
+                                    <h2 class="columns-hero-pricing__name">
+                                        Intermediate plan
+                                    </h2>
+                                    <div class="columns-hero-pricing__description">
+                                        For professionals
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns-hero-pricing__pricing">
+                                <span class="columns-hero-pricing__price">
+                                    $79
+                                </span>
+                                <span class="columns-hero-pricing__term">
+                                    / per month
+                                </span>
+                            </div>
+                            <div class="columns-hero-pricing__details">
+                                Professional tools for serious investigators
+                            </div>
+                            <ul class="columns-hero-pricing__list">
+                                <li class="columns-hero-pricing__item">
+                                    1000 platform lookups
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Advanced analytics
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Bulk search (up to 1000)
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    API access
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    90-day data retention
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Custom webhooks
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Priority support
+                                </li>
+                            </ul>
+                            <a href="" class="columns-hero-pricing__button border-gradient button button-transparent">
+                                <span>Choose pro</span>
+                            </a>
+                        </article>
+                        <article class="columns-hero-pricing__column">
+                            <div class="columns-hero-pricing__back-decor">
+                                <span class="light-hide"></span>
+                                <span class="dark-hide"></span>
+                            </div>
+                            <div class="columns-hero-pricing__header">
+                                <div class="columns-hero-pricing__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#pricing-icon_04'></use>
+                                    </svg>
+                                </div>
+                                <div class="columns-hero-pricing__info">
+                                    <h2 class="columns-hero-pricing__name">
+                                        Advanced plan
+                                    </h2>
+                                    <div class="columns-hero-pricing__description">
+                                        For experts
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns-hero-pricing__pricing">
+                                <span class="columns-hero-pricing__price">
+                                    $199
+                                </span>
+                                <span class="columns-hero-pricing__term">
+                                    / per month
+                                </span>
+                            </div>
+                            <div class="columns-hero-pricing__details">
+                                Enterprise-grade features for power users
+                            </div>
+                            <ul class="columns-hero-pricing__list">
+                                <li class="columns-hero-pricing__item">
+                                    Unlimited platform lookups
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Real-time monitoring
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Unlimited bulk search
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Advanced API access
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Unlimited data retention
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Custom integrations
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Dedicated support
+                                </li>
+                                <li class="columns-hero-pricing__item">
+                                    Face search capability
+                                </li>
+                            </ul>
+                            <a href="" class="columns-hero-pricing__button border-gradient button button-transparent">
+                                <span>Contact sales</span>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="hero-pricing__details details-hero-pricing">
+                        <div class="details-hero-pricing__back-decor">
+                            <span class="light-hide"></span>
+                            <span class="dark-hide"></span>
+                        </div>
+                        <div class="details-hero-pricing__info">
+                            <div class="details-hero-pricing__header">
+                                <div class="details-hero-pricing__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#pricing-icon_05'></use>
+                                    </svg>
+                                </div>
+                                <div class="details-hero-pricing__label">
+                                    Organisation plan
+                                </div>
+                            </div>
+                            <div class="details-hero-pricing__text">
+                                <p>
+                                    Perfect for teams and organizations requiring advanced features including face
+                                    search capabilities. Get unlimited
+                                    lookups, dedicated support, and custom integrations.
+                                </p>
+                            </div>
+                            <ul class="details-hero-pricing__list details-hero-pricing__list-doble">
+                                <li class="details-hero-pricing__item">
+                                    Unlimited face search lookups
+                                </li>
+                                <li class="details-hero-pricing__item">
+                                    Team collaboration tools
+                                </li>
+                                <li class="details-hero-pricing__item">
+                                    Advanced API access
+                                </li>
+                                <li class="details-hero-pricing__item">
+                                    Custom integration support
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="details-hero-pricing__values">
+                            <div class="details-hero-pricing__wrapper">
+                                <h2 class="details-hero-pricing__label">
+                                    Enterprise Features :
+                                </h2>
+                                <ul class="details-hero-pricing__list">
+                                    <li class="details-hero-pricing__item">
+                                        Dedicated account manager
+                                    </li>
+                                    <li class="details-hero-pricing__item">
+                                        99.9% uptime SLA
+                                    </li>
+                                    <li class="details-hero-pricing__item">
+                                        Priority feature requests
+                                    </li>
+                                    <li class="details-hero-pricing__item">
+                                        Custom training sessions
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="" class="details-hero-pricing__button border-gradient button button-transparent">
+                            <span>Contact sales</span>
+                            <span>
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#question'></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="pricing-questions">
+                <div class="pricing-questions__container">
+                    <h2 class="pricing-questions__title title">
+                        Frequently Asked Questions
+                    </h2>
+                    <div data-spollers data-one-spoller class="pricing-questions__content ">
+                        <div class="pricing-questions__item">
+                            <button tabindex="-1" type="button" data-spoller class="pricing-questions__header">
+                                <span class="pricing-questions__label ">What payment methods do you accept?</span>
+                                <span class="pricing-questions__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#arrow-spoiler'></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="pricing-questions__body">
+                                <p>
+                                    We accept all major credit cards, PayPal, and wire transfers for enterprise
+                                    customers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pricing-questions__item">
+                            <button tabindex="-1" type="button" data-spoller class="pricing-questions__header">
+                                <span class="pricing-questions__label ">Can I upgrade or downgrade my plan at any
+                                    ime?</span>
+                                <span class="pricing-questions__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#arrow-spoiler'></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="pricing-questions__body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo similique
+                                    molestiae placeat illum? Sequi debitis quae, libero ut, omnis temporibus
+                                    repellat nobis enim veritatis itaque asperiores quidem vitae modi.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pricing-questions__item">
+                            <button tabindex="-1" type="button" data-spoller class="pricing-questions__header">
+                                <span class="pricing-questions__label ">Do you offer refunds?</span>
+                                <span class="pricing-questions__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#arrow-spoiler'></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="pricing-questions__body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo similique
+                                    molestiae placeat illum? Sequi debitis quae, libero ut, omnis temporibus
+                                    repellat nobis enim veritatis itaque asperiores quidem vitae modi.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo similique
+                                    molestiae placeat illum? Sequi debitis quae, libero ut, omnis temporibus
+                                    repellat nobis enim veritatis itaque asperiores quidem vitae modi.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pricing-questions__item">
+                            <button tabindex="-1" type="button" data-spoller class="pricing-questions__header">
+                                <span class="pricing-questions__label ">What happens when I reach my lookup
+                                    limit?</span>
+                                <span class="pricing-questions__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#arrow-spoiler'></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="pricing-questions__body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo similique
+                                    molestiae placeat illum? Sequi debitis quae, libero ut, omnis temporibus
+                                    repellat nobis enim veritatis itaque asperiores quidem vitae modi.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pricing-questions__item">
+                            <button tabindex="-1" type="button" data-spoller class="pricing-questions__header">
+                                <span class="pricing-questions__label ">Do you offer custom enterprise plan?</span>
+                                <span class="pricing-questions__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#arrow-spoiler'></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="pricing-questions__body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo similique
+                                    molestiae placeat illum? Sequi debitis quae, libero ut, omnis temporibus
+                                    repellat nobis enim veritatis itaque asperiores quidem vitae modi.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo similique
+                                    molestiae placeat illum? Sequi debitis quae, libero ut, omnis temporibus
+                                    repellat nobis enim veritatis itaque asperiores quidem vitae modi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="get-started">
+                <div class="get-started__container">
+                    <div class="get-started__body">
+                        <h2 class="get-started__title title">
+                        Still have questions?
+                        </h2>
+                        <div class="get-started__subtitle">
+                            Our support team is here to help! We'll get back to you as soon as possible.
+                        </div>
+                        <a href="#" class="get-started__button button">
+                            <span>Contact support</span>
+                            <span>
+                                <svg>
+                                    <use xlink:href='img/icons/icons-csprite.svg#question'></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__copy">
+                    Platform Registration Lookup • 2025
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lookup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <title>Lookup</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/" class="header__logo" aria-label="link to homepage">
+                    <svg>
+                        <use xlink:href='img/icons/icons-sprite.svg#main-logo'></use>
+                    </svg>
+                </a>
+                <nav class='header-menu'>
+                    <ul class='header-menu__list'>
+                        <li class='header-menu__item'>
+                            <a href='pricing.html' class='header-menu__link'><span>Pricing plan</span></a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='' class='header-menu__link '><span>Contact us</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions actions-header">
+                    <div class="actions-header__mobile-menu mobile-menu-actions">
+                        <ul class="mobile-menu-actions__list">
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Account
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Settings
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Invoice
+                                </a>
+                            </li>
+                            <li class="mobile-menu-actions__item">
+                                <a href="" class="mobile-menu-actions__link">
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="actions-header__credits credits">
+                        <div class="credits__icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#credits-icon'></use>
+                            </svg>
+                        </div>
+                        <div class="credits__info">
+                            <div class="credits__name">Credit :</div>
+                            <div class="credits__value">10</div>
+                        </div>
+                    </div>
+                    <div class="actions-header__select select" data-select-menu>
+                        <button class="select__header" type="button" aria-label="settings" data-select-menu-button>
+                            <span class="select__value" data-select-menu-value>Account</span>
+                            <span class="select__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#arrow-spoiler'></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="select__body" data-select-menu-drop-down>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Settings</span></a></li>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Invoice</span></a></li>
+                            <li class="select__item" data-select-menu-option><a href=""
+                                    class="select__link"><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="actions-header__theme-switcher" data-theme="light-mode">
+                        <span class="actions-header__dark-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-dark'></use>
+                            </svg>
+                        </span>
+                        <span class="actions-header__light-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-light'></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class='burger-menu'>
+                        <span class="burger-menu__body">
+                            <span class='burger-menu__line burger-menu__line_1'></span>
+                            <span class='burger-menu__line burger-menu__line_2'></span>
+                            <span class='burger-menu__line burger-menu__line_3'></span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </header>
+        <main class="page">
+            <div class="search-results-hero decor">
+                <div class="decor__wrapper">
+                    <img class="decor__desctop" src="img/main/decor-spiral.svg" alt="decor-spiral">
+                    <img class="decor__mobile" src="img/main/decor-spiral-mobile.svg" alt="decor-spiral">
+                </div>
+                <div class="search-results-hero__container">
+                    <div class="search-results-hero__header">
+                        <div class="search-results-hero__details details-search-results">
+                            <div class="details-search-results__header">
+                                <form action="#" class="details-search-results__form">
+                                    <input type="text" placeholder="Search other email"
+                                        class="details-search-results__input input">
+                                    <div class="details-search-results__decor">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#search-icon-2'></use>
+                                        </svg>
+                                    </div>
+                                </form>
+                                <div class="details-search-results__buttons">
+                                    <ul class="details-search-results__list">
+                                        <li class="details-search-results__item">
+                                            <a href="" aria-label="pdf" class="details-search-results__link">
+                                                <svg class="details-search-results__dh">
+                                                    <use xlink:href='img/icons/icons-sprite.svg#pdf-icon'></use>
+                                                </svg>
+                                            </a>
+                                        <li class="details-search-results__item">
+                                            <a href="" aria-label="copy link" class="details-search-results__link">
+                                                <svg>
+                                                    <use xlink:href='img/icons/icons-sprite.svg#copy-link-icon'></use>
+                                                </svg>
+                                            </a>
+                                        <li class="details-search-results__item">
+                                            <a href="" aria-label="share link" class="details-search-results__link">
+                                                <svg>
+                                                    <use xlink:href='img/icons/icons-sprite.svg#share-icon'></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="details-search-results__more drop-down" data-drop-down>
+                                    <button type="button" class="drop-down__button" data-drop-down-button aria-label="open dropdown">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#more-icon'></use>
+                                        </svg>
+                                    </button>
+                                    <div class="drop-down__body" data-drop-down-body>
+                                        <ul class="drop-down__list">
+                                        <li class="drop-down__item">
+                                            <a href="" aria-label="pdf" class="drop-down__link">
+                                                <svg class="details-search-results__dh">
+                                                    <use xlink:href='img/icons/icons-sprite.svg#pdf-icon'></use>
+                                                </svg>
+                                            </a>
+                                        <li class="drop-down__item">
+                                            <a href="" aria-label="copy link" class="drop-down__link">
+                                                <svg>
+                                                    <use xlink:href='img/icons/icons-sprite.svg#copy-link-icon'></use>
+                                                </svg>
+                                            </a>
+                                        <li class="drop-down__item">
+                                            <a href="" aria-label="share link" class="drop-down__link">
+                                                <svg>
+                                                    <use xlink:href='img/icons/icons-sprite.svg#share-icon'></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-search-results__current-email">
+                                Result for <span>dianahoward20@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="search-results-hero__personal-info personal-info-search">
+                            <div class="personal-info-search__column">
+                                <div class="personal-info-search__header">
+                                    <div class="personal-info-search__icon">
+                                        <span>
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#person-icon'></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="personal-info-search__label">
+                                        Names <span>(3)</span>
+                                    </div>
+                                </div>
+                                <div class="personal-info-search__items personal-info-search__items-columns">
+                                    <div class="personal-info-search__item">Diana Howard</div>
+                                    <div class="personal-info-search__item">Diana Howard</div>
+                                    <div class="personal-info-search__item">Diana Howard</div>
+                                    <div class="personal-info-search__item">Diana Howard</div>
+                                    <div class="personal-info-search__item">Diana H</div>
+                                    <div class="personal-info-search__item">Diana H</div>
+                                    <div class="personal-info-search__item">Diana H</div>
+                                    <div class="personal-info-search__item">Diana H</div>
+                                    <div class="personal-info-search__item">D Howard</div>
+                                    <div class="personal-info-search__item">D Howard</div>
+                                    <div class="personal-info-search__item">D Howard</div>
+                                    <div class="personal-info-search__item">D Howard</div>
+                                    <div class="personal-info-search__item">D Howard</div>
+                                    <div class="personal-info-search__item">D Howard</div>
+                                    <div class="personal-info-search__item">D Howard</div>
+                                    <div class="personal-info-search__item">D Howard</div>
+                                </div>
+                            </div>
+                            <div class="personal-info-search__column">
+                                <div class="personal-info-search__header">
+                                    <div class="personal-info-search__icon">
+                                        <span>
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#email-icon'></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="personal-info-search__label">
+                                        Email <span>(4)</span>
+                                    </div>
+                                </div>
+                                <div class="personal-info-search__items">
+                                    <div class="personal-info-search__item personal-info-search__item-doble">
+                                        <span>dianahoward20@gmail.com</span>
+                                        <a href="" class="personal-info-search__button">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#search-icon'></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="personal-info-search__item personal-info-search__item-doble">
+                                        <span>dianah0@gmail.com</span>
+                                        <a href="" class="personal-info-search__button">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#search-icon'></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="personal-info-search__item personal-info-search__item-doble">
+                                        <span>dianah@gmail.com</span>
+                                        <a href="" class="personal-info-search__button">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#search-icon'></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="personal-info-search__item personal-info-search__item-doble">
+                                        <span>dianahoward@gmail.com</span>
+                                        <a href="" class="personal-info-search__button">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#search-icon'></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-stats">
+                        <div class="search-stats__items">
+                            <!-- .search-stats__item must have fixed width -->
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_01.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Instagram
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-doble">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    User name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    dianahoward__20
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_01.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Business :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Tech & lifestyle
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Lorem :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Creating & Sharing
+                                                </div>
+                                            </div>
+
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_07.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Facebook
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-third">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Full name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Diana Howard
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_02.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-third">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row search-stats__row-third">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_09.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Twitch
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-quarter">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    User name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    dianahoward__20
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_03.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+
+                                            <div class="search-stats__row">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-quarter">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Business :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Tech & lifestyle
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-quarter">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-quarter">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_11.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            LinkedIn
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-third">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Full name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Diana Howard
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_04.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-third">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row search-stats__row-third">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_10.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Slack
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-doble">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Full name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Diana Howard
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_05.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label">
+                                                    Type :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    UI/UX designer
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Business :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Tech & lifestyle
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row">
+                                                <div class="search-stats__label">
+                                                    Lorem :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Creating & Sharing
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_01.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Instagram
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-doble">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    User name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    dianahoward__20
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_01.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Business :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Tech & lifestyle
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Lorem :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Creating & Sharing
+                                                </div>
+                                            </div>
+
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_09.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Twitch
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-third">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    User name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    dianahoward__20
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_03.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+
+                                            <div class="search-stats__row">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-third">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Business :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Tech & lifestyle
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-third">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_07.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Facebook
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-third">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Full name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Diana Howard
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_02.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-third">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row search-stats__row-third">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_01.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Instagram
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-doble">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    User name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    dianahoward__20
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_01.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Business :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Tech & lifestyle
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Lorem :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Creating & Sharing
+                                                </div>
+                                            </div>
+
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_01.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Instagram
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-doble">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    User name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    dianahoward__20
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_01.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Business :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Tech & lifestyle
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Lorem :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Creating & Sharing
+                                                </div>
+                                            </div>
+
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_10.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            Slack
+                                        </div>
+                                    </div>
+                                    <a href="" class="search-stats__link">
+                                        <span>
+                                            Visit profile
+                                        </span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows search-stats__rows-doble">
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Full name
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Diana Howard
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-image">
+                                                <div class="search-stats__avatar">
+                                                    <img src="img/search-results/avatar_05.jpg" alt="avatar">
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row ">
+                                                <div class="search-stats__label">
+                                                    Type :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    UI/UX designer
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Location :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    San Francisco, California
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label search-stats__label-bold">
+                                                    Followers :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    4.5k
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Business :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Tech & lifestyle
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row search-stats__row-half">
+                                                <div class="search-stats__label">
+                                                    Following :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    100
+                                                </div>
+                                            </div>
+                                            <div class="search-stats__row">
+                                                <div class="search-stats__label">
+                                                    Lorem :
+                                                </div>
+                                                <div class="search-stats__value">
+                                                    Creating & Sharing
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="search-stats__footer">
+                                    <div class="search-stats__dates">
+                                        <div class="search-stats__date">
+                                            Joined : <span>Sep 28, 2021</span>
+                                        </div>
+                                        <div class="search-stats__date">
+                                            Last seen : <span>Jul 21, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-stats__item">
+                                <div class="search-stats__header">
+                                    <div class="search-stats__social-info">
+                                        <div class="search-stats__icon">
+                                            <img src="img/main/socials/social_11.png" width="30" height="30"
+                                                loading="lazy" alt="social icon">
+                                        </div>
+                                        <div class="search-stats__social-name">
+                                            LinkedIn
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-stats__body">
+                                    <div class="search-stats__details ">
+                                        <div class="search-stats__rows">
+                                            <div class="search-stats__row ">
+                                                <div
+                                                    class="search-stats__label search-stats__label-bold search-stats__label-no-found">
+                                                    No account found on this platform
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-media">
+                        <h2 class="search-media__caption">Account checkers & data aggregators</h2>
+                        <div class="search-media__items">
+                            <div class="search-media__item">
+                                <div class="search-media__header">
+                                    <div class="search-media__title">Social media</div>
+                                </div>
+                                <div class="search-media__body">
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_07.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            Facebook
+                                        </div>
+                                    </div>
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_01.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            Instagram
+                                        </div>
+                                    </div>
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_12.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            Twitter
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-media__item">
+                                <div class="search-media__header">
+                                    <div class="search-media__title">Professional</div>
+                                </div>
+                                <div class="search-media__body">
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_11.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            LinkedIn
+                                        </div>
+                                    </div>
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_13.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            GitHub
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="search-media__item">
+                                <div class="search-media__header">
+                                    <div class="search-media__title">Entertainment</div>
+                                </div>
+                                <div class="search-media__body">
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_14.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            YouTube
+                                        </div>
+                                    </div>
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_09.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            Twitch
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="search-media__item">
+                                <div class="search-media__header">
+                                    <div class="search-media__title">Creative</div>
+                                </div>
+                                <div class="search-media__body">
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_15.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            Dribbble
+                                        </div>
+                                    </div>
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_16.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            Pinterest
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="search-media__item">
+                                <div class="search-media__header">
+                                    <div class="search-media__title">Communication</div>
+                                </div>
+                                <div class="search-media__body">
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_10.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            Slack
+                                        </div>
+                                    </div>
+                                    <div class="search-media__column">
+                                        <div class="search-media__icon">
+                                            <img src="img/main/socials/social_17.png" alt="social icon">
+                                        </div>
+                                        <div class="search-media__name">
+                                            Discord
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="search-results-gallery">
+                <div class="search-results-gallery__container">
+                    <div class="search-results-gallery__header">
+                        <h2 class="search-results-gallery__title">
+                            All pictures
+                        </h2>
+                        <a href="" class="search-results-gallery__link search-results-gallery__link-descktop">
+                            See all
+                        </a>
+                    </div>
+                    <div class="search-results-gallery__items">
+                        <!-- .search-results-gallery__item must have fixed width -->
+                        <div class="search-results-gallery__sizer"></div>
+                        <div class="search-results-gallery__item search-results-gallery__item-1">
+                            <img src="img/search-results/gallery/gallery-imae_01.jpg" loading="lazy"
+                                alt="gallery image">
+                        </div>
+                        <div
+                            class="search-results-gallery__item search-results-gallery__item-2 search-results-gallery__item--half-height">
+                            <img src="img/search-results/gallery/gallery-imae_02.jpg" loading="lazy"
+                                alt="gallery image">
+                        </div>
+                        <div class="search-results-gallery__item search-results-gallery__item-3">
+                            <img src="img/search-results/gallery/gallery-imae_03.jpg" loading="lazy"
+                                alt="gallery image">
+                        </div>
+                        <div class="search-results-gallery__item search-results-gallery__item-6">
+                            <img src="img/search-results/gallery/gallery-imae_06.jpg" loading="lazy"
+                                alt="gallery image">
+                        </div>
+                        <div class="search-results-gallery__item search-results-gallery__item-4">
+                            <img src="img/search-results/gallery/gallery-imae_04.jpg" loading="lazy"
+                                alt="gallery image">
+                        </div>
+                        <div class="search-results-gallery__item search-results-gallery__item-5">
+                            <img src="img/search-results/gallery/gallery-imae_05.jpg" loading="lazy"
+                                alt="gallery image">
+                        </div>
+                        <div class="search-results-gallery__item search-results-gallery__item-7">
+                            <img src="img/search-results/gallery/gallery-imae_07.jpg" loading="lazy"
+                                alt="gallery image">
+                        </div>
+
+
+
+                    </div>
+                    <a href="" class="search-results-gallery__link search-results-gallery__link-mobile">
+                        See all
+                    </a>
+                </div>
+            </section>
+            <section class="search-timeline">
+                <div class="search-timeline__container">
+                    <div class="search-timeline__header">
+                        <h2 class="search-timeline__title">
+                            Digital footprint timeline
+                        </h2>
+                        <div class="search-timeline__subtitle">
+                            Tracking your online presence across platforms.
+                        </div>
+                    </div>
+                    <div class="search-timeline__body">
+                        <div class="search-timeline__swiper swiper">
+                            <div class="search-timeline__wrapper swiper-wrapper">
+                                <div class="search-timeline__slide swiper-slide">
+                                    <div class="search-timeline__content search-timeline__content-01">
+                                        <div class="search-timeline__info">
+                                            <div class="search-timeline__label">
+                                                Account created by Diana Howard
+                                            </div>
+                                            <div class="search-timeline__date">
+                                                <div class="search-timeline__icon-calendar">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <div class="search-timeline__value">
+                                                    Sep 28, 2021
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-timeline__arrow">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#decor-arrow-icon'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="search-timeline__social">
+                                            <div class="search-timeline__icon">
+                                                <img src="img/main/socials/social_15.png" alt="social">
+                                            </div>
+                                            <div class="search-timeline__name">
+                                                Dribbble
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-timeline__slide swiper-slide">
+                                    <div
+                                        class="search-timeline__content search-timeline__content-reverse search-timeline__content-02">
+                                        <div class="search-timeline__info">
+                                            <div class="search-timeline__label">
+                                                Profile picture updated
+                                            </div>
+                                            <div class="search-timeline__date">
+                                                <div class="search-timeline__icon-calendar">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <div class="search-timeline__value">
+                                                    Sep 28, 2021
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-timeline__arrow">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#decor-arrow-icon'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="search-timeline__social">
+                                            <div class="search-timeline__icon">
+                                                <img src="img/main/socials/social_16.png" alt="social">
+                                            </div>
+                                            <div class="search-timeline__name">
+                                                Pinterest
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-timeline__slide swiper-slide">
+                                    <div class="search-timeline__content search-timeline__content-03">
+                                        <div class="search-timeline__info">
+                                            <div class="search-timeline__label">
+                                                Profile information updated
+                                            </div>
+                                            <div class="search-timeline__date">
+                                                <div class="search-timeline__icon-calendar">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <div class="search-timeline__value">
+                                                    Sep 28, 2021
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-timeline__arrow">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#decor-arrow-icon'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="search-timeline__social">
+                                            <div class="search-timeline__icon">
+                                                <img src="img/main/socials/social_09.png" alt="social">
+                                            </div>
+                                            <div class="search-timeline__name">
+                                                Twitch
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-timeline__slide swiper-slide">
+                                    <div
+                                        class="search-timeline__content search-timeline__content-reverse search-timeline__content-04">
+                                        <div class="search-timeline__info">
+                                            <div class="search-timeline__label">
+                                                Last activity detected
+                                            </div>
+                                            <div class="search-timeline__date">
+                                                <div class="search-timeline__icon-calendar">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <div class="search-timeline__value">
+                                                    Sep 28, 2021
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-timeline__arrow">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#decor-arrow-icon'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="search-timeline__social">
+                                            <div class="search-timeline__icon">
+                                                <img src="img/main/socials/social_11.png" alt="social">
+                                            </div>
+                                            <div class="search-timeline__name">
+                                                LinkedIn
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-timeline__slide swiper-slide">
+                                    <div class="search-timeline__content search-timeline__content-05">
+                                        <div class="search-timeline__info">
+                                            <div class="search-timeline__label">
+                                                Account created by Diana Howard
+                                            </div>
+                                            <div class="search-timeline__date">
+                                                <div class="search-timeline__icon-calendar">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <div class="search-timeline__value">
+                                                    Sep 28, 2021
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-timeline__arrow">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#decor-arrow-icon'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="search-timeline__social">
+                                            <div class="search-timeline__icon">
+                                                <img src="img/main/socials/social_07.png" alt="social">
+                                            </div>
+                                            <div class="search-timeline__name">
+                                                Facebook
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-timeline__slide swiper-slide">
+                                    <div
+                                        class="search-timeline__content search-timeline__content-reverse search-timeline__content-06">
+                                        <div class="search-timeline__info">
+                                            <div class="search-timeline__label">
+                                                Last activity detected
+                                            </div>
+                                            <div class="search-timeline__date">
+                                                <div class="search-timeline__icon-calendar">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'>
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <div class="search-timeline__value">
+                                                    Sep 28, 2021
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-timeline__arrow">
+                                            <svg>
+                                                <use xlink:href='img/icons/icons-sprite.svg#decor-arrow-icon'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="search-timeline__social">
+                                            <div class="search-timeline__icon">
+                                                <img src="img/main/socials/social_11.png" alt="social">
+                                            </div>
+                                            <div class="search-timeline__name">
+                                                LinkedIn
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-timeline__nav">
+                                <button type="button" class="search-timeline__switcher search-timeline__prev" aria-label="previos slide">
+                                    <span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#prev-icon'></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button type="button" class="search-timeline__switcher search-timeline__next border-gradient button border-gradient-nc" aria-label="next slide">
+                                    <span>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#next-icon'></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__copy">
+                    Platform Registration Lookup • 2025
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

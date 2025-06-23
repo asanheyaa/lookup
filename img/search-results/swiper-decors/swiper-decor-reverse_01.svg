@@ -1,0 +1,31 @@
+<svg width="298" height="175" viewBox="0 0 298 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M297 0.498318C297 82.5135 230.738 149 149 149C67.2619 149 1 82.5135 1 0.498318" stroke="#5B41D8" stroke-opacity="0.3"/>
+<g filter="url(#filter0_d_1_3)">
+<circle cx="149" cy="149" r="19" fill="white" shape-rendering="crispEdges"/>
+<circle cx="149" cy="149" r="19" stroke="url(#paint0_linear_1_3)" stroke-opacity="0.3" shape-rendering="crispEdges"/>
+</g>
+<g clip-path="url(#clip0_1_3)">
+<path d="M148.999 157.335C153.602 157.335 157.333 153.604 157.333 149.001C157.333 144.399 153.602 140.668 148.999 140.668C144.397 140.668 140.666 144.399 140.666 149.001C140.666 153.604 144.397 157.335 148.999 157.335Z" stroke="#898792" stroke-width="1.5"/>
+<path d="M149 145.668V149.001L150.667 150.668" stroke="#898792" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_d_1_3" x="123.5" y="123.5" width="51" height="51" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_1_3"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.161964 0 0 0 0 0.0839035 0 0 0 0 0.528846 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1_3" x1="133" y1="136.5" x2="139.88" y2="174.784" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5B41D8"/>
+<stop offset="1" stop-color="#5B41D8" stop-opacity="0.3"/>
+</linearGradient>
+<clipPath id="clip0_1_3">
+<rect width="20" height="20" fill="white" transform="translate(139 139)"/>
+</clipPath>
+</defs>
+</svg>

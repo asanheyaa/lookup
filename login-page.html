@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lookup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <title>Lookup</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/" class="header__logo" aria-label="link to homepage">
+                    <svg>
+                        <use xlink:href='img/icons/icons-sprite.svg#main-logo'></use>
+                    </svg>
+                </a>
+                <nav class='header-menu'>
+                    <ul class='header-menu__list'>
+                        <li class='header-menu__item'>
+                            <a href='pricing.html' class='header-menu__link'><span>Pricing plan</span></a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='' class='header-menu__link'><span>Contact us</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions actions-header">
+                    <button type="button" class="actions-header__theme-switcher" data-theme="light-mode">
+                        <span class="actions-header__dark-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-dark'></use>
+                            </svg>
+                        </span>
+                        <span class="actions-header__light-icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#theme-icon-light'></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="hero-login-page decor">
+                <div class="decor__wrapper">
+                    <img class="decor__desctop" src="img/main/decor-spiral.svg" 
+                        alt="decor-spiral">
+                    <img class="decor__mobile" src="img/main/decor-spiral-mobile.svg" 
+                        alt="decor-spiral">
+                </div>
+                <div class="hero-login-page__container">
+                    <div class="hero-login-page__body">
+                        <h1 class="hero-login-page__title title title-hero">
+                            Welcome Back!
+                        </h1>
+                        <div class="hero-login-page__subtitle">
+                            Dive in by entering your credentials
+                        </div>
+                        <form action="#" class="hero-login-page__form login-form">
+                            <div class="login-form__items">
+                                <div class="login-form__item">
+                                    <label for="username" class="login-form__label">Username</label>
+                                    <input type="text" id="username" name="username" placeholder="Enter username"
+                                        class="login-form__input input">
+                                </div>
+                                <div class="login-form__item">
+                                    <label for="password" class="login-form__label">Password</label>
+                                    <div class="login-form__password" data-pass>
+                                        <input data-pass-input type="password" id="password" name="password"
+                                            placeholder="Enter password" class="login-form__input input">
+                                        <button data-pass-button type="button" aria-label="show and hide password"
+                                            class="login-form__pass-button">
+                                            <span class="login-form__icon-visible">
+                                                <svg>
+                                                    <use xlink:href='img/icons/icons-sprite.svg#password-icon-visible'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="login-form__icon-invisible">
+                                                <svg>
+                                                    <use
+                                                        xlink:href='img/icons/icons-sprite.svg#password-icon-invisible'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-form__fogot">
+                                <a href="" class="hero-login-page__link">
+                                    Forgot password?
+                                </a>
+                            </div>
+                            <button type="submit" class="login-form__button button"><span>Login</span></button>
+                        </form>
+                        <div class="hero-login-page__disclaimer">
+                            Don't have an account?
+                            <a href="" class="hero-login-page__link">
+                                Register
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__copy">
+                    Platform Registration Lookup • 2025
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
