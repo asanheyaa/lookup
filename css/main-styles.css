@@ -108,8 +108,22 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Brockmann";
   src: url("../fonts/brockmann-medium.woff2") format("woff2"), url("../fonts/brockmann-medium.woff") format("woff");
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brockmann";
+  src: url("../fonts/BrokmanTrial-Bold.woff2") format("woff2"), url("../fonts/BrokmanTrial-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brockmann";
+  src: url("../fonts/BrokmanTrial-Regular.woff2") format("woff2"), url("../fonts/BrokmanTrial-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 html,
@@ -253,7 +267,7 @@ body._lock {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(265deg, rgb(187, 173, 255) 42%, rgb(91, 64, 216) 134%);
+  background: linear-gradient(265deg, rgb(187, 173, 255) -34%, rgb(91, 64, 216) 42%);
   opacity: 0;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -1844,6 +1858,7 @@ body._lock {
 .benefits__text {
   font-size: 18px;
   color: var(--alt-color);
+  max-width: 16.125rem;
 }
 @media (max-width: 1560px) {
   .benefits__text {
