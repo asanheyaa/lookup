@@ -3283,7 +3283,7 @@ body._lock {
   background: var(--gray-base-bg);
   padding: 0.3125rem 0.625rem;
   bottom: calc(100% + 10px);
-  left: 0;
+  left: 50%;
   border-radius: 0.75rem;
   opacity: 0;
   visibility: hidden;
@@ -3294,9 +3294,9 @@ body._lock {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-transform: translate(-18%, 0);
-      -ms-transform: translate(-18%, 0);
-          transform: translate(-18%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 .details-search-results__current-email {
   font-size: 16px;

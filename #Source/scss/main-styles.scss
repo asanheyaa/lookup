@@ -2275,7 +2275,7 @@ body {
 		background: var(--gray-base-bg);
 		padding: 0.3125rem 0.625rem;
 		bottom:calc(100% + 10px);
-		left:-0;
+		left:50%;
 		border-radius: 0.75rem;
 		opacity: 0;
 		visibility: hidden;
@@ -2283,7 +2283,7 @@ body {
 		color: var(--main-color);
 		max-width: 9.375rem;
 		width: max-content;
-		transform: translate(-18%,0)
+		transform: translate(-50%,0)
 	}
 
 	&__current-email {
