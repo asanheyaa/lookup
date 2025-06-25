@@ -1,0 +1,129 @@
+:root {
+	--main-color: #1f1e24;
+	--secondary-color: #fff;
+	--color-3: #5b40d8;
+	--alt-color: #898792;
+	--green-color: #eaf8f1;
+	--yellow-color: #fff4e1;
+
+	--link-color: linear-gradient(296.33deg, #5b40d8 29.62%, #bbadff 168.8%);
+	--color-dark-theme: #010010;
+	--gray-base-bg: #f3f3f3;
+	--secondary-bg-color: #f6f4ff;
+	--bg-color-3: #f0edff;
+	--bg-color-4: #f0edff;
+
+	--border-color: rgba(91, 65, 216, 0.15);
+	--border-color-secondary: #efecfc;
+	--border-color-3: #d5cdff;
+
+	--gradient: linear-gradient(265deg, rgb(91, 64, 216) 42%, rgb(187, 173, 255) 134%);
+	// --gradient-2: linear-gradient(
+	// 	90deg,
+	// 	rgba(255, 255, 255, 0.7) 0%,
+	// 	rgba(251, 250, 255, 0.7) 64.3%,
+	// 	rgba(91, 65, 216, 0.7) 236%
+	// );
+	// --gradient-3: linear-gradient(360deg, #fff 42%, #a295e2 165%);
+	// --gradient-4: linear-gradient(260deg, rgba(91, 64, 216, 0.1) 70%, rgba(187, 173, 255, 0.1) 100%);
+	--gradient-5: linear-gradient(140deg, rgb(91, 64, 216, 0.3) 23%, rgba(187, 173, 255, 0) 49%);
+	--box-shadow: 1px 2px 0px 2px #cec3fd;
+	--box-shadow-2: 0 1px 14px 0 #f1eff9;
+
+	--gradient-1: linear-gradient(-1.36deg, rgba(255, 255, 255, 0.42) 37.815%, rgba(91, 65, 216, 0.7) 203.526%);
+	--gradient-2: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.42),
+		rgba(251, 250, 255, 0.33) 45.703%,
+		rgba(91, 65, 216, 0.03) 196.132%
+	);
+	--gradient-3: linear-gradient(2.47deg, #ffffff 46.37%, #a295e2 166.82%);
+	--gradient-4: linear-gradient(8.47deg, #ffffff 46.37%, #a295e2 166.82%);
+	--gradient-5: linear-gradient(260deg, rgba(91, 64, 216, 0.1) 70%, rgba(187, 173, 255, 0.1) 100%);
+	--gradient-6: linear-gradient(24.47deg, rgba(255, 255, 255, 0.42) 46.37%, rgba(91, 65, 216, 0.7) 166.82%);
+	--gradient-7: linear-gradient(342.37deg, rgba(255, 255, 255, 0.9) 56.05%, rgba(91, 65, 216, 0.9) 170.04%);
+	--gradient-8: rgba(246, 244, 255, 1);
+	--gradient-9: rgba(240, 237, 255, 1);
+	--gradient-10: linear-gradient(25.54deg, rgba(91, 65, 216, 0) -13.27%, rgba(91, 65, 216, 0.4) 164.88%);
+	--gradient-11: rgba(240, 237, 255, 1);
+	--gradient-12: linear-gradient(24.47deg, rgba(255, 255, 255, 0.42) 46.37%, rgba(91, 65, 216, 0.7) 166.82%);
+	--gradient-13: linear-gradient(296.33deg, #5B40D8 29.62%, #BBADFF 168.8%);
+	--border-color-1: #f3f2f6;
+
+	
+	--button-gradient: linear-gradient(-6.51deg, rgb(91, 64, 216) 20.095%, rgb(187, 173, 255) 186.182%);
+	--button-gradient-2: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.42),
+		rgba(251, 250, 255, 0.33) 45.703%,
+		rgba(91, 65, 216, 0.03) 196.132%
+	);
+}
+
+html.dark-theme {
+	body {
+		background: var(--color-dark-theme);
+		--main-color: #fff;
+		--secondary-color: rgba(255, 255, 255, 0.07);
+		--alt-color: #898792;
+		--color-3: #fff;
+		--green-color: #183434;
+		--yellow-color: #483b34;
+
+		--link-color: #fff;
+		--color-dark-theme: #010010;
+		--gray-base-bg: #1d1b3e;
+		--secondary-bg-color: #16122f;
+		--bg-color-3: linear-gradient(90deg, rgba(55, 54, 80, 0.25) 30%, rgba(135, 110, 255, 0.25) 82%);
+		--bg-color-4: linear-gradient(180deg, #8e76ff -58%, #131227 71%);
+
+		--border-color-secondary: #21202e;
+		--border-color: rgba(255, 255, 255, 0.14);
+		--border-color-3: rgba(255, 255, 255, 0.3);
+
+		--gradient: linear-gradient(265deg, rgb(91, 64, 216) 42%, rgb(187, 173, 255) 134%);
+		--gradient-2: linear-gradient(90deg, rgba(55, 54, 80, 0.25) 30%, rgba(135, 110, 255, 0.25) 82%);
+		--gradient-3: linear-gradient(180deg, #8e76ff -58%, #131227 71%);
+		--gradient-4: linear-gradient(260deg, rgba(91, 64, 216, 0.1) 70%, rgba(187, 173, 255, 0.1) 100%);
+		--gradient-5: linear-gradient(140deg, rgb(91, 64, 216, 0.15) 23%, rgba(187, 173, 255, 0) 49%);
+
+		--box-shadow: 1px 2px 0px 2px #cec3fd;
+		--box-shadow-2: 0 0px 0px 0 transparent;
+
+		--gradient-1: linear-gradient(203.49deg, rgb(142, 118, 255) -97.513%, rgb(19, 18, 39) 65.381%);
+		--gradient-2: linear-gradient(90deg, rgba(55, 54, 80, 0.25) 0%, rgba(135, 110, 255, 0.25) 100%);
+		--gradient-3: linear-gradient(181.71deg, #8e76ff -147.03%, #131227 58.94%);
+		--gradient-4: linear-gradient(184.71deg, #8e76ff -147.03%, #131227 58.94%);
+		--gradient-5: linear-gradient(260deg, rgba(91, 64, 216, 0.1) 70%, rgba(187, 173, 255, 0.1) 100%);
+		--gradient-6: linear-gradient(217.23deg, #8e76ff -157.31%, #131227 63.38%);
+		--gradient-7: linear-gradient(332.23deg, rgba(255, 255, 255, 0) 59%, rgba(111, 87, 224, 0.25) 99.57%);
+		--gradient-8: linear-gradient(180.9deg, #8e76ff -147.03%, #131227 58.94%);
+		--gradient-9: linear-gradient(296.33deg, rgba(91, 64, 216, 0.3) 29.62%, rgba(187, 173, 255, 0.3) 168.8%);
+		--gradient-10: linear-gradient(25.54deg, rgba(91, 65, 216, 0) -13.27%, rgba(91, 65, 216, 0.4) 164.88%);
+		--gradient-11: linear-gradient(296.33deg, rgba(91, 64, 216, 0.3) 29.62%, rgba(187, 173, 255, 0.3) 168.8%);
+		--gradient-12: linear-gradient(210.52deg, #8e76ff -161.92%, #131227 64.1%);
+
+		--border-color-1: #262043;
+		& .border-gradient {
+			&:not(.border-gradient-nc) {
+				background: none;
+				border-color: var(--main-color);
+			}
+		}
+		& .button {
+			color: var(--main-color);
+		}
+		.light-hide {
+			display: block;
+		}
+		.dark-hide {
+			display: none;
+		}
+		.most-popular::after {
+			border: 1px solid #fff;
+		}
+		.dark-blur {
+			backdrop-filter: blur(1.25rem);
+		}
+	}
+}
