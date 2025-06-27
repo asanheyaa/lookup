@@ -24,24 +24,21 @@ if (switcherTheme) {
 
 		let mode = switcherTheme.dataset.theme
 		mode === 'light-mode' ? mode = 'dark-mode' : mode = 'light-mode'
-		console.log(mode);
 		switcherTheme.dataset.theme = mode
 
 		localStorage.setItem('lookupTheme', mode)
-		console.log(localStorage.getItem('lookupTheme'));
 	})
 
 
 	let activeTheme = localStorage.getItem('lookupTheme')
 
-	console.log(localStorage.getItem('lookupTheme'));
 
 
 	if (activeTheme === "light-mode") {
 		switcherTheme.classList.remove('_active')
 		document.documentElement.classList.remove('dark-theme')
 		switcherTheme.dataset.theme = "light-mode"
-		
+
 	} else if (activeTheme === "dark-mode") {
 		switcherTheme.classList.add('_active')
 		document.documentElement.classList.add('dark-theme')
