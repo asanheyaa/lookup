@@ -606,10 +606,13 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1.125rem;
-	position: relative;
-	z-index: 3;
+	
 	@media (max-width: 767.98px) {
 		gap: 0.8125rem;
+	}
+	@media (min-width:991.98px) {
+		position: relative;
+	z-index: 3;
 	}
 	&__button {
 		padding: 13px 38px;
@@ -750,7 +753,7 @@ body {
 			top: 50%;
 			right: 0;
 			transform: translate(0, -50%);
-			transition: all 0s ease 0.3s;
+			transition: width 0s ease 0.3s;
 		}
 
 		&_3 {
@@ -768,10 +771,13 @@ body {
 	width: 200px;
 	height: 100vh;
 	top: 0;
-	right: -120%;
+	right: -210px;
 	transition: all 0.3s ease 0s;
 	&._active {
 		right: 0;
+	}
+	@media (min-width:767.98px) {
+		display: none;
 	}
 	background: var(--secondary-color);
 	backdrop-filter: blur(60px);
