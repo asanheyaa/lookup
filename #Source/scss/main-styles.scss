@@ -2635,32 +2635,35 @@ body {
 		padding: 0.9375rem;
 		display: flex;
 		gap: 12px;
+		flex-wrap: wrap;
 		@media (max-width: 767.98px) {
-			flex-wrap: wrap;
+			
 		}
 	}
 
 	&__column {
 		background: var(--gray-base-bg);
 		border-radius: 0.625rem;
-		padding: 0.3125rem 0.9375rem 0.3125rem 0.3125rem;
-
+		padding: 0px 15px 0px 5px;
 		display: flex;
 		gap: 0.625rem;
 		align-items: center;
+		justify-content: center;
+		height: 3.125rem;
 	}
 
 	&__icon {
 		flex-grow: 0;
 		flex-shrink: 0;
-		@include adaptiveValue(flex-basis, 38, 22);
+		flex: 0 0 2.5rem;
 		img {
-			@include adaptiveValue(height, 38, 22);
-			@include adaptiveValue(width, 38, 22);
+			width: 2.5rem;
+			height: 2.5rem;
 		}
 	}
 
 	&__name {
+		font-size: 1rem;
 	}
 }
 
