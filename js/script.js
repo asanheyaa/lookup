@@ -497,7 +497,7 @@ function gridInitTwo() {
 	const items = document.querySelector('.search-results-gallery__items');
 	if (items) {
 		let msnry = new Masonry(items, {
-			columnWidth: 1,
+			columnWidth: 250,
 			itemSelector: '.search-results-gallery__item',
 			fitWidth: true,
 			gutter: 15,

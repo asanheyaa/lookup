@@ -36,6 +36,7 @@
   --gradient-11: rgba(240, 237, 255, 1);
   --gradient-12: linear-gradient(24.47deg, rgba(255, 255, 255, 0.42) 46.37%, rgba(91, 65, 216, 0.7) 166.82%);
   --gradient-13: linear-gradient(296.33deg, #5B40D8 29.62%, #BBADFF 168.8%);
+  --gradient-14: rgba(240, 237, 255, 1);
   --border-color-1: #f3f2f6;
   --button-gradient: linear-gradient(-6.51deg, rgb(91, 64, 216) 20.095%, rgb(187, 173, 255) 186.182%);
   --button-gradient-2: linear-gradient(
@@ -82,6 +83,7 @@ html.dark-theme body {
   --gradient-10: linear-gradient(25.54deg, rgba(91, 65, 216, 0) -13.27%, rgba(91, 65, 216, 0.4) 164.88%);
   --gradient-11: linear-gradient(296.33deg, rgba(91, 64, 216, 0.3) 29.62%, rgba(187, 173, 255, 0.3) 168.8%);
   --gradient-12: linear-gradient(210.52deg, #8e76ff -161.92%, #131227 64.1%);
+  --gradient-14: #16122f;
   --border-color-1: #262043;
 }
 html.dark-theme body .border-gradient:not(.border-gradient-nc) {
