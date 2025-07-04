@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Lookup">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="css/main-styles.css">
+
     <title>Lookup</title>
 </head>
 
@@ -103,7 +105,7 @@
                         </span>
                     </button>
                 </div>
-               
+
             </div>
         </header>
         <main class="page">
@@ -142,7 +144,8 @@
                             </div>
                             <div class="body-search-hero__item" data-filter-content="phone">
                                 <form action="#" class="body-search-hero__form">
-                                    <input type="text" class="body-search-hero__input input" placeholder="Enter phone number">
+                                    <input type="tel" id="phone" class="body-search-hero__input input"
+                                        placeholder="Enter phone number">
                                     <button type="submit" class="body-search-hero__button-search button"><span>Search
                                             platform</span></button>
                                 </form>
@@ -179,6 +182,11 @@
 
     </div>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        const iti = intlTelInput(input);
+    </script>
 </body>
 
 </html>

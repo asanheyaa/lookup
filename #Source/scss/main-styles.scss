@@ -516,7 +516,8 @@ body {
 //==========================================================================================================================================================
 
 .header {
-	padding-block: 1.6875rem;
+	padding-top: 27px;
+	padding-bottom: 27px;
 	position: relative;
 	z-index: 100;
 	&__container {
@@ -528,13 +529,23 @@ body {
 
 	&__logo {
 		color: var(--main-color);
-		@include adaptiveValue(height, 42, 34);
-		@include adaptiveValue(width, 126, 95);
+		@include adaptiveValue(height, 63, 39);
+		@include adaptiveValue(width, 200, 125);
 		position: relative;
 		z-index: 3;
+		@include adaptiveValue(top, 14, 6);
+		@media (max-width:360px) {
+			width: 5.625rem;
+			height: 1.75rem;
+			top: 0.3125rem;
+		}
 		svg {
-			@include adaptiveValue(height, 42, 34);
-			@include adaptiveValue(width, 126, 99);
+			@include adaptiveValue(height, 63, 39);
+			@include adaptiveValue(width, 200, 125);
+			@media (max-width:360px) {
+			width: 5.625rem;
+			height: 1.75rem;
+		}
 		}
 	}
 
@@ -1452,7 +1463,7 @@ body {
 		align-items: center;
 		justify-content: flex-end;
 		gap: 1.875rem;
-		@media (max-width:991.98px) {
+		@media (max-width: 991.98px) {
 			flex-direction: column-reverse;
 		}
 	}
@@ -1478,9 +1489,9 @@ body {
 
 	&__link {
 		color: var(--alt-color);
-		@media (any-hover: hover){
-			&:hover{
-				text-decoration: underline
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}
@@ -2218,6 +2229,9 @@ body {
 		@media (max-width: 767.98px) {
 			flex-direction: column;
 		}
+	}
+	& .iti{
+		flex: 1 1 auto;
 	}
 
 	&__input {
