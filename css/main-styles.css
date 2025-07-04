@@ -3253,15 +3253,13 @@ body._lock {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-@media (min-width: 767.98px) {
-  .body-search-hero__input {
-    max-width: 28.875rem;
-  }
-}
 .body-search-hero__button-search {
   padding-block: 13px;
   padding-inline: 1.5625rem;
   border-radius: 2.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 @media (max-width: 1560px) {
   .body-search-hero__button-search {

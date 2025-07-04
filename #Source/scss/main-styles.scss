@@ -2236,14 +2236,13 @@ body {
 
 	&__input {
 		flex: 1 1 auto;
-		@media (min-width: 767.98px) {
-			max-width: 28.875rem;
-		}
+		
 	}
 	&__button-search {
 		@include adaptiveValue(padding-block, 13, 10);
 		padding-inline: 1.5625rem;
 		border-radius: 2.5rem;
+		flex: 0 0 auto;
 	}
 }
 
