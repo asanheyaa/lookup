@@ -1445,15 +1445,44 @@ body {
 //==========================================================================================================================================================
 
 .footer {
-	@include adaptiveValue(padding-block, 30, 14);
-	border-top: 1px solid var(--gray-base-bg);
+	@include adaptiveValue(padding-block, 30, 20);
+	border-top: 0.0625rem solid var(--gray-base-bg);
 	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1.875rem;
+		@media (max-width:991.98px) {
+			flex-direction: column-reverse;
+		}
 	}
 
 	&__copy {
 		text-align: center;
 		@include adaptiveValue(font-size, 18, 12);
 		color: var(--alt-color);
+	}
+}
+
+.footer-menu {
+	&__list {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue(gap, 30, 15);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		color: var(--alt-color);
+		@media (any-hover: hover){
+			&:hover{
+				text-decoration: underline
+			}
+		}
 	}
 }
 
