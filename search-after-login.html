@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Lookup">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
     <link rel="stylesheet" href="css/main-styles.css">
 
     <title>Lookup</title>
@@ -182,10 +182,13 @@
 
     </div>
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
     <script>
         const input = document.querySelector("#phone");
-        const iti = intlTelInput(input);
+        window.intlTelInput(input, {
+                initialCountry: "us",
+                loadUtils: () => import("/intl-tel-input/js/utils.js?1743167482095") // for formatting/placeholders etc
+            });
     </script>
 </body>
 

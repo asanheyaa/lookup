@@ -534,7 +534,7 @@ body {
 		position: relative;
 		z-index: 3;
 		@include adaptiveValue(top, 14, 6);
-		@media (max-width:360px) {
+		@media (max-width: 360px) {
 			width: 5.625rem;
 			height: 1.75rem;
 			top: 0.3125rem;
@@ -542,10 +542,10 @@ body {
 		svg {
 			@include adaptiveValue(height, 63, 39);
 			@include adaptiveValue(width, 200, 125);
-			@media (max-width:360px) {
-			width: 5.625rem;
-			height: 1.75rem;
-		}
+			@media (max-width: 360px) {
+				width: 5.625rem;
+				height: 1.75rem;
+			}
 		}
 	}
 
@@ -2163,6 +2163,53 @@ body {
 	}
 }
 
+.iti {
+	flex: 1 1 auto;
+
+	& .iti--inline-dropdown,
+	& &__dropdown-content {
+		border: none;
+		background: var(--secondary-color);
+		color: var(--main-color);
+		backdrop-filter: blur(3.75rem);
+		padding: 0.8125rem 1.5625rem 0.8125rem 1.125rem;
+	}
+	& .iti--inline-dropdown,
+
+	& &-0__dropdown-content {
+		border: none;
+		background: var(--secondary-color);
+		color: var(--main-color);
+		backdrop-filter: blur(3.75rem);
+		padding: 0.8125rem 1.5625rem 0.8125rem 1.125rem;
+	}
+
+	&__search-input {
+		border: 0.0625rem solid var(--border-color-secondary);
+		border-radius: 2.5rem;
+		padding: 0.8125rem 1.5625rem 0.8125rem 1.125rem;
+		@include adaptiveValue(font-size, 18, 14);
+		width: 100%;
+		font-weight: 400;
+		background: var(--secondary-color);
+		color: var(--main-color);
+		backdrop-filter: blur(3.75rem);
+		margin-bottom: 0.9375rem;
+		@media (max-width: 767.98px) {
+			padding: 0.6875rem 0.9375rem;
+		}
+	}
+
+	&__selected-country-primary {
+		padding: 0 0.625rem 0 0.9375rem;
+	}
+
+	&__country-list {
+		scrollbar-color: var(--alt-color) var(--secondary-color);
+	}
+}
+
+
 .body-search-hero {
 	max-width: 41.75rem;
 	margin: 0 auto;
@@ -2230,13 +2277,9 @@ body {
 			flex-direction: column;
 		}
 	}
-	& .iti{
-		flex: 1 1 auto;
-	}
 
 	&__input {
 		flex: 1 1 auto;
-		
 	}
 	&__button-search {
 		@include adaptiveValue(padding-block, 13, 10);
